@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/fav.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/navbar-fixed.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">  
+    <link rel="stylesheet" href="{% static 'css/style-2.css'%}">  
+    <title>HomePage</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top" id="nav_id">
+        <div class="container">
+            <a href="#home-section" class="navbar-brand font-weight-bold text-white">Destination</a>
+            <button class="navbar-toggler navber-toggler-right" datta-toggle="collapse" data-target="#navBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#exlpore-head-section" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-head-section" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-head-section" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </nav>
+      <!--- HOME SECTION--->
+      <section id="home-section">
+          <div class="dark-overlay">
+              <div class="home-inner">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-8 d-none d-sm-block">
+                              <h1 class="dispaly-3 pb-3 font-italic"><strong>Make Your Wedding Day Memorable</strong></h1>
+                              <h2 class="dispaly-3 pb-3 font-italic"><strong>Let's Celebrate with your dear ones</strong></h2>
+                          </div>
+                          <div class="col-md-12 col-lg-4">
+                              <div class="card bg-primary text-center">
+                                  <div class="card-body">
+                                      <h3>Sign Up</h3>
+                                      <p>Please fill up this form to register</p>
+                                      <form action="">
+                                          <div class="form-group">
+                                              <input type="text" class="form-control form-control-lg" name="user" placeholder="Username">
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" name="pass" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" name="pass2" placeholder="Confirm Password">
+                                        </div>
+                                        <input type="submit" value="Submit" class="btn btn-outline-primary btn-block">
+
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!---Explore section-->
+
+        <section id="exlpore-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center py-5">
+                        <h2><strong>Explore Populer Event Management</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---SECTION MAIN --->
+        <section id="exlpore-main-section" class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>Hotel-71</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-1.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                               <p class="text-muted text-lowercase">WE PLAN & DESIGN WEDDINGS
+                                THAT CAPTURE THE IMAGINATION</p>
+                                <a href="{% static 'https://www.event71.com' %}" class="btn btn-primary">Learn more</a>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>Colors Event Management</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-222.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                               <p class="text-muted text-lowercase">Well Organised, Well planned And One of best events planning Company among all</p>
+                               <a href="{% static 'https://colors-event-management.business.site/website/colors-event-management/?hl=en-US' %}" class="btn btn-primary">Learn more</a>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>BD Event Management & Wedding Planners</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-3.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                            <p class="text-muted text-lowercase">A directory of complete wedding & event 
+                                to HELP plan your perfect wedding</p>
+                            <a href="{% static 'http://www.bdweddingplanners.com/' %}" class="btn btn-primary">Learn more</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>
+                                    Sygmaz</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-4.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                               <p class="text-muted text-lowercase">Sigma Mehdi is the inspiring visionary behind the success of SYGMAZ in Bangladesh</p>
+                                <a href="{% static 'https://sygmaz.com.bd/about-us/' %}" class="btn btn-primary">Learn more</a>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>Antora Wedding Planner</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-5.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                               <p class="text-muted text-lowercase">Antora Wedding Planner” one of the most renowned and well-established wedding planner</p>
+                                <a href="{% static 'https://antoraweddingplanner.com/' %}" class="btn btn-primary">Learn more</a>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-muted text-center font-italic"><strong>Creative Wedding Planner</strong></h3>
+                            </div>
+                            <div class="card-body">
+                            <img src="{% static 'images/dest-6.jpg'%}" alt="Destination-1" class="img-fluid rounded">
+                           </div>
+                           <div class="card-footer">
+                               <p class="text-muted text-lowercase">WANT TO MAKE YOUR DREAMED EVENT COME ALIVE</p>
+                                <a href="{% static 'https://creativeeventsbd.com/' %}" class="btn btn-primary">Learn more</a>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about-head-section">
+            <div class="dark-overlay">
+                <div class="about_inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h1 class="p-3 font-italic font-weight-bold">Give Us a Call</h1>
+                                <div class="fa">
+                                    <img src="{% static 'images/logo3.png' %}">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h1 class="p-3 font-italic font-weight-bold">Send Message</h1>
+                                <div class="fa">
+                                    <img src="{% static 'images/logo2.png' %}">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h1 class="p-3 font-italic font-weight-bold">Our Address</h1>
+                                <div class="fa">
+                                    <img src="{% static 'images/logo.png' %}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    
+
+
+    
+    <script src="{% static 'js/popper.min.js'%}"></script>
+    <script src="{% static 'js/jquery-slim.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/navbar-fixed.js'%}"></script>
+</body>
+</html>

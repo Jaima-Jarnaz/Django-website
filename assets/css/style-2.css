@@ -1,0 +1,33 @@
+h3{
+    font-size: 20px;
+}
+#nav_id{
+    background: dimgrey;
+    opacity: 0.6;
+    border-bottom: none;
+    color: white;
+  }
+  .nav-link{
+      color: white;
+  }
+  .nav-link:hover{
+      color:white;
+
+  }
+
+#exlpore-head-section{
+    background-color: black;
+}
+#about-head-section{
+    background: url('../images/about.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+}
+#about-head-section .dark-overlay{
+    min-height: 700px;
+    background: rgba(0,0,0,0.7);
+}
+#about-head-section .about_inner{
+    padding-top: 300px;
+    padding-bottom: 70px;
+}

@@ -1,0 +1,41 @@
+$body-bg:#333;
+$font-color:#fff;
+
+body{
+    color: $font-color;
+}
+#home-section{
+    background: url('../images/wedding.jpg') no-repeat center top ;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    .dark-overlay{
+        min-height: 700px;
+        background: rgba(0,0,0,0.5);
+    }
+    .home-inner{
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    .bg-primary {
+        background-color: #607d8b85!important;
+    }
+    .card-form{
+        opacity: 0.8;
+    }
+}
+#about-head-section{
+    .fa img{
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+
+@media(max-width:768px){
+    #home-section{
+        h1{
+            font-size: 38px;
+        }
+    }
+}
